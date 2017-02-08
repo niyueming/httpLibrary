@@ -9,13 +9,13 @@
  *
  */
 
-package net.nym.httplibrary;
+package net.nym.httplibrary.http;
 
 /**
  * @author niyueming
- * @date 2017-02-06
- * @time 08:48
+ * @date 2017-02-07
+ * @time 10:06
  */
 
-public class HttpUtils {
+public interface NCallback {
 }

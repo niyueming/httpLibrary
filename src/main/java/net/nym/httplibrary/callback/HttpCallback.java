@@ -11,7 +11,7 @@
 
 package net.nym.httplibrary.callback;
 
-import net.nym.httplibrary.https.NCallback;
+import net.nym.httplibrary.http.NCallback;
 
 /**
  * @author niyueming

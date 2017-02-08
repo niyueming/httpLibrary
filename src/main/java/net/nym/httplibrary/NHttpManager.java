@@ -9,16 +9,18 @@
  *
  */
 
-package net.nym.httplibrary.https;
+package net.nym.httplibrary;
 
 /**
  * @author niyueming
- * @date 2017-02-07
- * @time 10:08
+ * @date 2017-02-08
+ * @time 11:52
  */
 
-public interface NRequest<CALLBACK extends NCallback,RESULT> {
-    void cancel();
-    RESULT execute();
-    void enqueue(CALLBACK callback);
+public interface NHttpManager<REQUEST,CALLBACK,RESPONSE> {
+
+    void cancelByTag(Object tag);
+    void cancelAll();
+    RESPONSE execute(REQUEST request);
+    void enqueue(REQUEST request,CALLBACK callback,int id);
 }

@@ -9,7 +9,7 @@
  *
  */
 
-package net.nym.httplibrary.https;
+package net.nym.httplibrary.http;
 
 import java.util.List;
 

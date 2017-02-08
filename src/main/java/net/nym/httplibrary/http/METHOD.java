@@ -9,13 +9,29 @@
  *
  */
 
-package net.nym.httplibrary.https;
+package net.nym.httplibrary.http;
 
 /**
  * @author niyueming
- * @date 2017-02-07
- * @time 10:06
+ * @date 2017-02-08
+ * @time 10:41
  */
 
-public interface NCallback {
+public enum METHOD {
+    GET("GET"),
+    POST("POST"),
+    PUT("PUT"),
+    DELETE("DELETE"),
+    HEAD("HEAD"),
+    PATCH("PATCH")
+    ;
+
+    private String value;
+    METHOD(String value) {
+        this.value = value;
+    }
+
+    public String getValue(){
+        return value;
+    }
 }
