@@ -69,5 +69,5 @@ public abstract class HttpCallback<REQUEST,RESPONSE,RESULT> implements NCallback
 
     public abstract void onError(Exception e,String error,int id);
 
-    public abstract void onResponse(REQUEST request,int id);
+    public abstract void onResponse(RESULT response,int id);
 }
