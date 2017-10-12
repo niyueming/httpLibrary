@@ -20,6 +20,7 @@ package net.nym.httplibrary.http;
 public enum METHOD {
     GET("GET"),
     POST("POST"),
+    POST_RAW("POST_RAW"),
     PUT("PUT"),
     DELETE("DELETE"),
     HEAD("HEAD"),
